@@ -2,7 +2,7 @@
   import Dock from '$lib/components/Dock.svelte';
   import Sidebar from '$lib/components/Sidebar.svelte';
 
-  let sidebarOpen = true;
+  let sidebarOpen: boolean = true;
 </script>
 
 <div class="app">
