@@ -1,0 +1,62 @@
+
+:root {
+  --bg: #0f111a;
+  --dock: #141726;
+  --sidebar: #1a1e31;
+  --panel: #1e2338;
+  --text: #e6e9f2;
+  --muted: #a6b0c3;
+  --accent: #a78bfa;
+  --border: rgba(255, 255, 255, 0.06);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+}
+
+.dock {
+  justify-content: space-between;
+  background: var(--dock);
+  border-right: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 10px 0 16px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+  background: var(--sidebar);
+  border-right: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.sidebar {
+  background: linear-gradient(
+    180deg,
+    var(--sidebar),
+    #1c2140
+  );
+}
+
+.dock button {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.dock .bottom {
+  margin-bottom: 12px;
+}
+
+textarea {
+  background: var(--bg);
+  color: var(--text);
+}

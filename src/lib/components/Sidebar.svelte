@@ -7,19 +7,20 @@
 </div>
 
 <style>
-  .sidebar {
-    width: 0;
-    overflow: hidden;
-    background: #2a2a2a;
-    transition: width 0.2s ease;
-  }
+.sidebar {
+  width: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  transition: width 0.2s ease;
+}
 
-  .sidebar.open {
-    width: 250px;
-  }
+.sidebar.open {
+  width: 260px;
+}
 
-  h3 {
-    color: white;
-    padding: 10px;
-  }
+h3 {
+ color: white;
+ padding: 10px;
+}
 </style>

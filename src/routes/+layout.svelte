@@ -5,6 +5,7 @@
   let sidebarOpen: boolean = true;
 </script>
 
+
 <div class="app">
   <Dock bind:sidebarOpen />
 
@@ -28,3 +29,4 @@
     background: #1e1e1e;
   }
 </style>
+
