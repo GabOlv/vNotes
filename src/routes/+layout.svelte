@@ -1,32 +1,32 @@
 <script lang="ts">
   import Dock from '$lib/components/Dock.svelte';
   import Sidebar from '$lib/components/Sidebar.svelte';
+  import '../app.css';
 
-  let sidebarOpen: boolean = true;
+  let sidebarOpen = $state(true);
 </script>
 
-
-<div class="app">
+<div class="app-layout">
   <Dock bind:sidebarOpen />
-
-  <Sidebar {sidebarOpen} />
-
-  <main class="editor">
-    <slot />
-  </main>
+  
+  <div class="main-content">
+    <Sidebar {sidebarOpen} />
+    <main class="editor">
+      <slot />
+    </main>
+  </div>
 </div>
 
 <style>
-  .app {
-    display: flex;
+  .app-layout {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 40px 1fr;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
   }
-
-  .editor {
-    flex: 1;
-    background: #1e1e1e;
+  .main-content {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
   }
 </style>
-
